@@ -1,0 +1,8 @@
+pandas>=1.5.0
+numpy>=1.21.0
+openpyxl>=3.0.0       # Needed to read/write Excel files
+matplotlib>=3.5.0     # For basic plots
+seaborn>=0.11.0       # For better data visualization
+jupyterlab>=3.0.0     # In case someone runs .ipynb locally
+nbformat>=5.7.0
+nbconvert>=6.5.0
