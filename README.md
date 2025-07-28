@@ -14,40 +14,62 @@ ANC4 &amp; SBA Coverage Analysis
 Skilled birth attendant:percentage of deliveries attended by skilled health personnel.
 -Group-based comparison: Compares coverage across “On-track” and “Off-track” country groups.
 
-# Project Structure
+---
 
+## Project Structure
+
+```
 anc4-sba-coverage-analysis/
 ├── data/
-│   ├── outputs/              # Output CSVs and results from the analysis
-│   │   └── coverage_summary.csv
-│   ├── processed/            # Cleaned datasets after preparation steps
-│   └── raw/                  # Raw input data files (CSV, Excel, etc.)
+│   ├── outputs/                      # Final population-weighted ANC4 & SBA results
+│   ├── processed/                    # Cleaned datasets post-preparation
+│   └── raw/                          # Original raw data files (CSV, Excel)
 │
-├── notebooks/                # Modular notebooks for each pipeline stage
-│   ├── data_preparation.ipynb       # Loads raw data, extracts ISO codes
-│   ├── data_cleaning_exploration.ipynb  # Cleans datasets, harmonizes schema
-│   ├── merge_and_analysis.ipynb     # Merges data and computes weighted coverage
-│   └── generate_report.ipynb        # Generates an HTML report with plot
+├── notebooks/                        # Modular pipeline notebooks
+│   ├── data_preparation.ipynb        # Load raw data, extract ISO3 codes
+│   ├── data_cleaning_exploration.ipynb  # Handle missing values, prepare for analysis
+│   ├── merge_and_analysis.ipynb      # Merge datasets, compute population-weighted indicators
+│   └── generate_report.ipynb         # Generate HTML report with plot
 │
 ├── report/
-│   └── coverage_report.html  # Final HTML report with visualizations
+│   └── coverage_report.html          # Final visual report for stakeholders
 │
 ├── templates/
-│   └── report_template.html  # HTML template used for report generation
+│   └── report_template.html          # HTML template for visual report
 │
-├── run_project.py            # Main script to automate full pipeline
-├── user_profile.py           # Reusable utility functions
-├── requirements.txt          # List of required Python dependencies
+├── run_project.py                    # Automates entire workflow (run end-to-end)
+├── user_profile.py                   # Smart file path management across systems
+├── requirements.txt                  # Python dependencies
 ├── .gitignore
 └── README.md
+```
 
-# Project Execution Steps:
-PREREQUISITES: Python 3.7 or higher needs to be installed
-RUN: pip install -r requirements.txt
-RUN: pip install ipykernel (Ensure your Jupyter kernel is properly installed and available)
-RUN: python -m ipykernel install --user
-Validate Jupyter Kernel RUN: jupyter kernelspec list
-RUN: python run_project.py
+---
+
+## Project Execution Steps
+
+### Prerequisites
+- Python 3.7 or higher
+- Jupyter/IPython kernel
+
+### 🔧 Installation and Execution
+
+```
+# Step 1: Install dependencies
+pip install -r requirements.txt
+
+# Step 2: Install Jupyter kernel (if not already available)
+pip install ipykernel
+python -m ipykernel install --user
+
+# Step 3: Validate Jupyter kernel installation
+jupyter kernelspec list
+
+# Step 4: Run the complete pipeline
+python run_project.py
+```
+
+---
 
 
 # Folder Description:
