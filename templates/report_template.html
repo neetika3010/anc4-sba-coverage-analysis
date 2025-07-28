@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Coverage Analysis Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { color: #2c3e50; }
+    table { border-collapse: collapse; width: 60%; margin-bottom: 30px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    th { background-color: #f2f2f2; }
+    img { max-width: 600px; }
+    .section { margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <h1>💼 Positions Applied For</h1>
+  <ul>
+    <li><strong>Learning and Skills Data Analyst Consultant</strong> : Req.#581598</li>
+    <li><strong>Household Survey Data Analyst Consultant</strong> : Req.#581656</li>
+    <li><strong>Administrative Data Analyst</strong> : Req.#581696</li>
+    <li><strong>Microdata Harmonization Consultant</strong> : Req.#581699</li>
+  </ul>
+
+  <div class="section">
+    <h1>📊 Coverage Analysis Report</h1>
+    <p>This report shows population-weighted coverage for two indicators – <strong>ANC4</strong> and <strong>SBA</strong> – across country groups.</p>
+  </div>
+
+  <div class="section">
+    <h2>📋 Summary Table</h2>
+    {{ table }}
+  </div>
+
+  <div class="section">
+    <h2>📈 Visual Comparison</h2>
+    <img src="data:image/png;base64,{{ plot }}">
+  </div>
+
+  <div class="section">
+    <h2>📝 Summary Interpretation</h2>
+    <p>
+      Countries classified as <strong>"On-track"</strong> in terms of under-five mortality status show significantly higher coverage for both key maternal health indicators—<strong>ANC4</strong> (four or more antenatal visits) and <strong>SBA</strong> (Skilled Birth Attendance)—with population-weighted averages exceeding 85%. In contrast, <strong>"Off-track"</strong> countries lag by over 30 percentage points, with average coverage falling below 60% for both indicators.
+    </p>
+    <p>
+      This gap underscores deep inequities in access to essential maternal services—especially in regions where health systems remain under-resourced. By using population-weighted indicators, the analysis reflects the share of actual pregnant women and newborns receiving care, rather than giving equal weight to each country. This approach yields a more policy-relevant measure of progress and service delivery.
+    </p>
+    <p>
+      Beyond the headline indicators, metadata variables such as <strong>OBS_STATUS</strong> (data reliability), <strong>population size</strong>, <strong>mortality rate</strong>, <strong>life expectancy</strong>, and <strong>maternal parity</strong> offer further insight into systemic constraints like limited health workforce, poor geographic access, and disparities linked to education or fertility patterns. These structural signals are essential for targeted policy interventions and resource allocation.
+    </p>
+  </div>
+
+</body>
+</html>
