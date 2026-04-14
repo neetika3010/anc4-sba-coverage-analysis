@@ -1,13 +1,6 @@
 # unicef-assignment
 ANC4 &amp; SBA Coverage Analysis
 
-# Positions Applied For
-
- Learning and Skills Data Analyst Consultant :Req.#581598  
- Household Survey Data Analyst Consultant :Req#581656  
- Administrative Data Analyst :Req#581696  
- Microdata Harmonization Consultant :Req#581699
-
  This project aims at calculating Population Weighted Coverage where the key concepts used are:
 -Automation: Modular pipeline with reusable code such that scripts are executed sequentially in clean order.
 -Antenatal care 4+ visits:percentage of women (aged 15-49 years) attended at least four times during pregnancy by any provider.
